@@ -23,7 +23,7 @@ function calculateProfitAndLoss() {
         "Oh god 😰! You are at a loss of " +
         result +
         " . And Loss percent: " +
-        resultPercent.toFixed(2);
+        resultPercent.toFixed(2)+"%";
     } else if (cP < sP) {
       result = (sP - cP) * quantity;
       resultPercent = (result / (cP * quantity)) * 100;
@@ -32,7 +32,7 @@ function calculateProfitAndLoss() {
         "Going good 😎! You are at a profit of " +
         result +
         " . And Profit percent: " +
-        resultPercent.toFixed(2);
+        resultPercent.toFixed(2)+"%";
     } else {
       showAnswer.style.color = "#379683";
       showAnswer.innerHTML =
