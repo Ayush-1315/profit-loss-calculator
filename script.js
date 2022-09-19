@@ -12,8 +12,7 @@ function calculateProfitAndLoss() {
     resultPercent = 0,
     quantity = parseInt(stocks.value);
   if (isNaN(cP)===true || isNaN(sP)===true|| isNaN(quantity)===true) {
-    showAnswer.style.color = "#F13C20";
-    showAnswer.innerHTML = "Please enter proper values";
+    alert('Please fill out all Fields');
   } 
   else {
     if (cP > sP) {
